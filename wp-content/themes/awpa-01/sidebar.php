@@ -7,4 +7,15 @@
     <ul>
         <?php wp_get_archives('type=monthly'); ?>
     </ul>
+    <p>From wp-includes/functions.php:</p>
+    <ol>
+    	<li>
+    		21345876.34 converted to local format, using number_format_i18n(21345876.34, 2)...
+    		<?php echo number_format_i18n(21345876.34, 2)?>
+    	</li>
+    	<li>
+    		Are we using SSL? Using is_ssl()...<br/>
+    		<?php echo is_ssl() ? 'yes' : 'no' ?>
+    	</li>
+   	</ol>
 </div>

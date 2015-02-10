@@ -1,5 +1,7 @@
 <?php
 add_filter('the_content', 'bad_word_filter');
+add_filter('the_title', 'bad_word_filter');
+add_filter('content_edit_pre', 'bad_word_filter');
 function bad_word_filter($content) {
 	$bad_words = array( 'douchebag', 'wally' );
 	$content = str_ireplace($bad_words, '*****', $content);
