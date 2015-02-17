@@ -15,7 +15,7 @@
   if($slider_posts) {
     foreach($slider_posts as $post) { 
           echo 'Slide ' . $counter . ' - ';
-          echo the_title() . '<br/>' . the_content() . '<br/>'; ?>
+          echo the_title() . '<br/>'. the_content() . '<br/>'; ?>
     <?php
 	    $counter++; } ?>
   <?php
